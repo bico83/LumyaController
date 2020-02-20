@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L controller-rescue:Arduino_Nano_v3.x-MCU_Module A1
-U 1 1 5CF0569C
-P 6200 3350
-F 0 "A1" H 6200 2261 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 6200 2170 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 6350 2400 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6200 2350 50  0001 C CNN
-	1    6200 3350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R4
 U 1 1 5CF075F3
@@ -1008,12 +997,12 @@ $EndComp
 $Comp
 L power:VCC #PWR010
 U 1 1 5E5DB6A8
-P 2800 3900
-F 0 "#PWR010" H 2800 3750 50  0001 C CNN
-F 1 "VCC" H 2817 4073 50  0000 C CNN
-F 2 "" H 2800 3900 50  0001 C CNN
-F 3 "" H 2800 3900 50  0001 C CNN
-	1    2800 3900
+P 2500 3350
+F 0 "#PWR010" H 2500 3200 50  0001 C CNN
+F 1 "VCC" H 2517 3523 50  0000 C CNN
+F 2 "" H 2500 3350 50  0001 C CNN
+F 3 "" H 2500 3350 50  0001 C CNN
+	1    2500 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1051,6 +1040,15 @@ F 3 "~" H 7350 2250 50  0001 C CNN
 	1    7350 2250
 	1    0    0    -1  
 $EndComp
-Connection ~ 14050 3600
-Connection ~ 3200 1850
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5E511586
+P 6200 3350
+F 0 "A?" H 6200 2261 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6200 2170 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6350 2400 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6200 2350 50  0001 C CNN
+	1    6200 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
